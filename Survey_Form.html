@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOB SURVEY FORM</title>
+    <link rel="stylesheet" type="text/css" href="Survey_Form.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Kanit&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="heading">
+    <h1 id=title>Job Survey Form</h1>
+    <p id="description">We love to know In which Sector you want to work!</p>
+    </div>
+       <div class="main">
+	         <form id="survey-form">
+			   <label id="name-label">FUll NAME</label>
+			   <input name="name" id="name" type="name" required placeholder="Enter Your Full Name"/>
+			   <label id="email-label">Email Address</label>
+			   <input name="email" id="email" type="email" required placeholder="Enter Your email address"/>
+			   <label id="number-label">AGE</label>
+			   <input name="number" id="number" type="number" required placeholder="Enter Your Age" min="12" max="45"/>
+			   
+			<label> Choose Your Interest</label>   
+			<select id="dropdown" name="code-lang" class="form">
+                <option value="Art">Art</option>
+                <option value="Business">Business</option>
+                <option value="Education">Education</option>
+                <option value="LawEnforcement">Law Enforcement</option>
+                <option value="Media">Media</option>
+                <option value="Medical">Medical</option>
+                <option value="Service">Service</option>
+                <option value="Technology">Technology</option>
+            </select>
+			<label id="job-label">Employment Status:</label><br>
+                <label for="foremployed" class="radiofont"><input id="foremployed" type="radio" name="gender" class="inline" value="foremployed" checked/> Employed</label>
+                <label for="forunemployed" class="radiofont"><input id="forunemployed" type="radio" name="gender" class="inline" value="forunemployed" /> Unemployed</label>
+				<label for="forapplier" class="radiofont"><input id="forapplier" type="radio" name="gender" class="inline" value="forapplier"/> Applier</label>
+				<label for="forstudent" class="radiofont"><input id="forstudent" type="radio" name="gender" class="inline" value="forstudent"/> Student</label>
+				
+		    <label> Choose Your Sector</label>  
+			<label for="private" class="radiofont"><input id="Private" type="checkbox" name="sector1" class="inline" value="private"/> PRIVATE SECTOR </label>
+            <label for="public" class="radiofont"><input id="Public" type="checkbox" name="sector2" class="inline" value="public"/> PUBLIC SECTOR</label>
+		    
+			<div id="ending">
+                <label id="comments-label">Do you have any suggestion about this survey?</label><br>
+                <textarea class="form" placeholder="Please feel free to write a review..."></textarea><br><br>
+            </div>
+			<input id="submit" type="submit"  class="submitnew">
+			
+			
+			 </form>
+
+	   </div>
+	   <br>
+</body>
+</html>
